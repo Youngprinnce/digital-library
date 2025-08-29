@@ -4,10 +4,10 @@ import {
   ConflictException,
 } from "@nestjs/common";
 import { JwtService } from "@nestjs/jwt";
-import { UsersService } from "../users/services/users.service";
-import { RegisterDto, LoginDto } from "./dto";
-import { User } from "../users/entities/user.entity";
-import { JwtPayload } from "./strategies/jwt.strategy";
+import { UsersService } from "../../users/services/users.service";
+import { RegisterDto, LoginDto } from "../dto";
+import { User } from "../../users/entities/user.entity";
+import { JwtPayload } from "../strategies/jwt.strategy";
 
 @Injectable()
 export class AuthService {

@@ -2,8 +2,8 @@ import { Test, TestingModule } from "@nestjs/testing";
 import { JwtService } from "@nestjs/jwt";
 import { ConflictException, UnauthorizedException } from "@nestjs/common";
 import { AuthService } from "./auth.service";
-import { UsersService } from "../users/services/users.service";
-import { UserRole } from "../users/entities/user.entity";
+import { UsersService } from "../../users/services/users.service";
+import { UserRole } from "../../users/entities/user.entity";
 
 describe("AuthService", () => {
   let service: AuthService;
