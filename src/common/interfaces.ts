@@ -12,11 +12,3 @@ export interface ApiResponse<T> {
   message?: string;
   errors?: string[];
 }
-
-export interface ErrorResponse {
-  success: false;
-  message: string;
-  code: string;
-  timestamp: string;
-  path: string;
-}
